@@ -1,0 +1,20 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styleSheet.css"/>
+    <link rel="icon" href="/picture/weather_icon.png" />
+</head>
+<body>
+    <div class="main_content">
+    {{>header}}
+    <p>You wanna Know weather around you:</p>
+        <form>
+            <input type="search" placeholder=" Enter Location"/>
+            <button>submit</button>
+        </form>
+        <p id='location'></p>
+        <p id='details'></p>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>

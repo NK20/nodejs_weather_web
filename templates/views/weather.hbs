@@ -1,0 +1,15 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styleSheet.css"/>
+    <link rel="icon" href="/picture/weather_icon.png" />
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    <div class="main_content">
+    {{>header}}
+    <h3>{{location}}</h3>
+    <p>Today temp is {{temp}} and probability of rain is {{rainProb}}</p>
+    </div>
+    {{>footer}}
+</body>
+</html>
