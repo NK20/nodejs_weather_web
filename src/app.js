@@ -6,6 +6,7 @@ const getForcast= require('./utils/forcast')
 const geoCode = require('./utils/geoCode')
 
 const app= express()
+const port = process.env.PORT || 3000
 
 const public = path.join(__dirname,'../public')
 const viewsTemp = path.join(__dirname,'../templates/views')
@@ -80,6 +81,6 @@ app.get('*',(request, response)=>{
         name:'NK'
     })
 })
-app.listen(3001,()=>{
-    console.log('Server Start at 3001')
+app.listen(port,()=>{
+    console.log('Server Start at :'+port)
 })
