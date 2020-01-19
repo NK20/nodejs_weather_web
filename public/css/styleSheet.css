@@ -9,6 +9,12 @@ body {
     min-height: 100vh;
 }
 
+#about_info{
+    color: #3d3c3c;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
 .main_content{
     flex-grow: 1;
 }
